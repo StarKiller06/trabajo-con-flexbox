@@ -1,0 +1,390 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(245, 245, 245, 0.877);
+}
+
+
+
+
+
+.menusuperior{
+    display: flex;
+    background-color: #878787;
+    padding: 0px;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.menusuperior div{
+    background-color: #838383;
+    width: 40px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+.menusuperior li {
+list-style:none ;
+
+    
+}
+.menusuperior a {
+    text-decoration: none;
+    
+    }
+
+.menusuperior li a{
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    display:block;
+}
+    
+
+.menusuperior2{
+    display: flex;
+    background-color: #838383;
+    padding: 0px;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+
+.menusuperior2 div{
+    background-color: #838383;
+    width: 50px;
+    margin: 1px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+.menusuperior2 li {
+    list-style:none ;
+        
+    }
+.menusuperior2 a{
+text-decoration: none;
+    
+}
+.menusuperior2 li a{
+    color: rgb(255, 255, 255);
+    padding: 2px;
+    display:block;
+}
+
+
+
+
+.flexcontainer1{
+    display:inline-flex;
+    padding: 10px;
+}
+
+.flexcontainer1 div{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.menu{
+    display: block;
+    justify-content: center;
+    list-style: none;
+    padding: 80px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+    height: 30px;
+    width: 100%;
+
+}
+
+
+
+.menu2 {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+    height: 30px;
+    width: 100%;
+}
+
+
+
+.menu li a,
+.menu2 li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    display:block;
+}
+
+.menu li,
+.menu2 li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu a:hover,
+.menu2 a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.header {
+    height: 90px;
+    margin-top: -20px;
+    background-color: #202020;
+    position: static;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+.flexcontainer1 :hover{
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;  
+}
+
+
+
+.flexcontainer2{
+    display: inline-flex;
+    padding: 0px;
+    justify-content:space-around;
+    margin: 40px;
+    
+
+}
+
+.flexcontainer2 div{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    line-height: 30px;
+    justify-content: space-around;
+    
+    
+}
+
+.flexcontainer3{
+    display: inline-flex;
+    padding: 0px;
+    justify-content:space-around;
+    margin: 40px;
+
+}
+
+.miniflexcontainer {
+    padding: 20x;
+    width: 1200px;
+}
+
+.miniflexcontainer div{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    line-height: 2.5px;
+    justify-content:flex-start;
+    
+
+}
+
+.container p{
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+    line-height: 20px;
+    font-size: 15px;
+    
+}
+
+
+
+
+
+
+input[type="search"] {
+    border-radius: 2px;
+    background: white;
+    padding: 5px 20px;
+    border: 1px solid black;
+    width: 400px;
+    outline: none;
+    color: black;
+}
+
+
+
+button {
+    background-color: rgb(51, 255, 0);
+    border: 1px solid black;
+    height: 30px;
+}
+
+#botones:hover {
+    background-color: rgb(255, 241, 241);
+    cursor: pointer;
+}
+
+
+
+[id="heart"],
+[id="heart1"],
+[id="heart2"] {
+    position: absolute;
+    right: 40%;
+}
+
+[id="heart"]:checked+label,
+[id="heart1"]:checked+label,
+[id="heart2"]:checked+label {
+    color: #e2264d;
+    -webkit-filter: none;
+    filter: none;
+    will-change: font-size;
+    -webkit-animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+    animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+}
+
+[id="heart"]:checked+label:before,
+[id="heart"]:checked+label:after,
+[id="heart1"]:checked+label:before,
+[id="heart1"]:checked+label:after,
+[id="heart2"]:checked+label:before,
+[id="heart2"]:checked+label:after {
+    -webkit-animation: inherit;
+    animation: inherit;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+[id="heart"]:checked+label:before,
+[id="heart1"]:checked+label:before,
+[id="heart2"]:checked+label:before {
+    will-change: transform, border-width, border-color;
+    -webkit-animation-name: bubble;
+    animation-name: bubble;
+}
+
+[id="heart"]:checked+label:after,
+[id="heart1"]:checked+label:after,
+[id="heart2"]:checked+label:after {
+    will-change: opacity, box-shadow;
+    -webkit-animation-name: sparkles;
+    animation-name: sparkles;
+}
+
+[id="heart"]:focus+label,
+[id="heart1"]:focus+label,
+[id="heart2"]:focus+label {
+    text-shadow: 0 0 3px white, 0 1px 1px white, 0 -1px 1px white, 1px 0 1px white, -1px 0 1px white;
+}
+
+[for="heart"],
+[for="heart1"],
+[for="heart2"] {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: relative;
+    color: #888;
+    font-size: 1.5em;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+[for="heart"]:before,
+[for="heart"]:after,
+[for="heart1"]:before,
+[for="heart1"]:after,
+[for="heart2"]:before,
+[for="heart2"]:after {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    content: "";
+}
+
+[for="heart"]:before,
+[for="heart1"]:before,
+[for="heart2"]:before {
+    box-sizing: border-box;
+    margin: -2.25rem;
+    border: solid 2.25rem #e2264d;
+    width: 4.5rem;
+    height: 4.5rem;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+@-webkit-keyframes heart {
+
+    0%,
+    17.5% {
+        font-size: 0;
+    }
+}
+
+@keyframes heart {
+
+    0%,
+    17.5% {
+        font-size: 0;
+    }
+}
+
+@-webkit-keyframes bubble {
+    15% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #a477c2;
+        border-width: 2.25rem;
+    }
+
+    30%,
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #b97fe0;
+        border-width: 0;
+    }
+}
+
+@keyframes bubble {
+    15% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #bd90db;
+        border-width: 2.25rem;
+    }
+
+    30%,
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        border-color: #c385ec;
+        border-width: 0;
+    }
+}
